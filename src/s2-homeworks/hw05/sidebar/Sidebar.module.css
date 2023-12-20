@@ -1,4 +1,7 @@
 .sidebar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .sidebar.open {
@@ -8,17 +11,24 @@
 }
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
 
 .nav a {
+    color: #00cc22;
 }
 
 .nav a:hover {
 }
 
 .nav a.active {
+    color: #B21232;
 }
+
 .close {
+    color: #0066CC;
 }
 
 .close img {
