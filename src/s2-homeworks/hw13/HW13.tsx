@@ -37,8 +37,8 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
-                setText('...success')
-                setInfo('code 200 - success')
+                setText('...всё ок)')
+                setInfo('код 200 - обычно означает что скорее всего всё ок)')
 
 
             })
@@ -47,13 +47,13 @@ const HW13 = () => {
                 if (e.response.status === 400) {
                     setCode('Ошибка 400!');
                     setImage(error400);
-                    setInfo('ошибка 400 - проверь данные!');
-                    setText('не то в body!');
+                    setInfo('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!');
+                    setText('Ты не отправил success в body вообще!');
                 }
                 if (e.response.status === 500) {
                     setCode('Ошибка 500!');
                     setImage(error500);
-                    setInfo('ошибка 500 - сервер не обрабатывает');
+                    setInfo('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)');
                     setText(
                         'эмитация ошибки на сервере');
                 }
